@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corey's Cyber-Security Blog</title>
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="https://www.linkedin.com/in/corey-carpenter-a92916210/" target="_blank" class="nav-link">Linked
+                In</a>
+            </li>
+
+            <li>
+              <a href="mailto:stephcorey7@gmail.com" class="nav-link">Send Email</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            Hi, I'm <b>Corey&nbsp;Carpenter</b>
+            <br>Future Cyber Security Analyst
+          </h1>
+
+          <p class="h3">
+            Focused on Cybersecurity Protocols
+          </p>
+
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="./assets/images/hero.jpg" alt="Corey Carpenter" class="hero-img">
+          </div>
+          <p class="synopsis">Hi! My name is Corey Carpenter and I'm an aspiring cyber security professional. Computers have interested me since I was a little kid playing on my mom's desktop. I enjoy the technical aspect of the cyber security field, and the problem solving challenges that come along with it. Outside of computers I enjoy reading and getting out in nature, spending my free time hiking and playing soccer. 
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="main">
+
+      <div class="container">
+
+        <!-- BLOG SECTION -->
+
+
+
+        <div class="blog">
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/MITM.png" alt="Picture representing Man in the Middle Attacks" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <h3 class="blog">
+                  Man in the Middle Attacks
+                </h3>
+
+                <p class="blog-text">
+                  Man-in-the-middle attacks are a widespread and effective cyberattack, with some estimates suggesting
+                  around one third of all attacks employ MitM techniques. A MitM attack is defined by the US National
+                  Institute of Standards and Technology as, “an attack where the adversary positions himself in between
+                  the user and the system so that he can intercept and alter data traveling between them”. This boils
+                  down to someone sneaking into the conversation between a user and an application, where they can
+                  “eavesdrop” and even change some of the messages being sent or received. This can be very dangerous to
+                  users because they don't know it's happening, and can easily get private information stolen.
+
+                  There are a few common methods malicious actors employ during Man in the Middle attacks, such as ARP spoofing, DNS spoofing, and session hijacking. ARP spoofing is basically sending fake ARP (address resolution protocol) messages over a lan. This lets attackers link their own MAC addresses to the IP of a device, allowing them to gain access to a target’s data packets. DNS (domain name system) spoofing is where attackers redirect users to malicious websites using false IP addresses. The websites users are sent to are made to look legit as to not arouse suspicion. Session hijacking is where an attacker takes over a user’s active session on a web app. They can do this by intercepting session cookies which are used to authenticate a user’s session. Once in, the attacker can impersonate the user and gain access to sensitive information.
+
+                  There are a few great ways to avoid being the victim of a man in the middle attack. A lot of MitM
+                  attacks happen on public wifi, such as at a coffee shop. If you need to use a public wifi network,
+                  using a VPN (virtual private network) will prevent anyone from sniffing your packets by creating a
+                  secure connection between your device and the VPN's server. If you don't want to pay for a VPN you can
+                  simply not use public wifi. Another way to prevent this type of attack from happening to you is making
+                  sure all the websites you visit use HTTPS and not HTTP, as the S means it is secure.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.jpg" alt="Corey Carpenter" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Corey Carpenter</a>
+
+                    <p class="text-sm">
+                      <time datetime="2024-04-01">April 1, 2024</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">1 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/Cryptography.jpg" alt="Picture representing cryptography" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <h3 class="blog">
+                  Cryptography
+                </h3>
+
+                <p class="blog-text">
+                  As cybercrimes become more prevalent, keeping sensitive data safe comes to the forefront. Cryptography
+                  is the answer. It essentially keeps private communications secure and has been used for thousands of
+                  years. From Julius Caesar using the Caesar Cipher to send messages to his generals to the German
+                  Enigma machine used during World War Two, cryptography has been a major player throughout history. In
+                  modern times, cryptography protects online data in the form of corporate, governmental, and personal
+                  data. As time progresses, more private data will need to be protected, and cryptography is the
+                  keystone to this.
+
+                  We know that cryptography is meant to keep data private, but how exactly does it accomplish this? In
+                  layman's terms, it takes information and transforms it into essentially gibberish, called ciphertext.
+                  Then, people with the key can decode the ciphertext into the original information, also called
+                  plaintext.
+
+
+                  There are two main forms of encryption used today: symmetric and asymmetric. Symmetric encryption uses
+                  one key for encryption and decryption. It is also known as “secret key” encryption because the key
+                  must be kept secret. Asymmetric encryption uses a public key to encrypt the plaintext and a private
+                  key to decrypt the ciphertext. It is slower and less efficient than symmetric encryption, but it is
+                  more secure for communicating over the internet. Symmetric encryption is more commonly used for large
+                  quantities of data, such as a company's files.
+
+
+                  The future will more than likely change how we view cryptography, with quantum cryptography around the
+                  corner. It would be akin to the change from basic Caesar Ciphers to modern day 256 bit encryption.
+                  While quantum cryptography and quantum computing as a whole are still being researched and developed,
+                  their potential is exponential. The inherent nature of quantum mechanics leads to the potential
+                  possibility of an uncrackable encryption. This <a
+                    href="https://www.ibm.com/topics/quantum-cryptography" target="_blank">website</a> provides a much
+                  more detailed description of
+                  quantum cryptography and I highly recommend reading it.
+                </p>
+
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.jpg" alt="Corey Carpenter" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Corey Carpenter</a>
+
+                    <p class="text-sm">
+                      <time datetime="2024-04-01">April 1, 2024</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">2 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="aside">
+
+          <div class="tags">
+
+            <h2 class="h2">Good Reads</h2>
+
+            <div class="wrapper">
+
+              <button class="hashtag"
+                data-link="https://www.google.com/search?q=governance+risk+and+compliance&oq=governance+risk+&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDU4NjJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">#GRC</button>
+              <button class="hashtag"
+                data-link="https://www.google.com/search?q=threat+intelligence&oq=threat+intel&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDI4ODJqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8">#threat-intelligence</button>
+              <button class="hashtag"
+                data-link="https://www.google.com/search?q=cloud+security&sca_esv=fe467be3178b7f86&sca_upv=1&sxsrf=ACQVn0-PaFY5aX0110Ssw2-yXUIF_lYIOg%3A1712635813504&ei=pb8UZoy0HtLz0PEPn-qVoAw&ved=0ahUKEwjMmqzKobSFAxXSOTQIHR91BcQQ4dUDCBE&uact=5&oq=cloud+security&gs_lp=Egxnd3Mtd2l6LXNlcnAiDmNsb3VkIHNlY3VyaXR5MhEQABiABBiKBRiRAhixAxiDATILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMhEQABiABBiKBRiRAhixAxiDATIFEAAYgAQyBRAAGIAEMgoQABiABBiKBRhDMgUQABiABDIFEAAYgAQyBRAAGIAESLcWUABY8BRwAHgBkAEAmAFsoAGDCaoBBDExLjO4AQPIAQD4AQGYAg6gAq0JwgIKECMYgAQYigUYJ8ICBBAjGCfCAhAQLhiABBiKBRhDGMcBGNEDwgIQEC4YgAQYigUYQxjHARivAcICEBAAGIAEGBQYhwIYsQMYgwHCAhMQLhiABBiKBRhDGLEDGMcBGNEDwgIIEAAYgAQYsQPCAg4QABiABBiKBRixAxiDAcICCxAAGIAEGLEDGIMBwgINEC4YgAQYxwEY0QMYCpgDAJIHBDExLjOgB69j&sclient=gws-wiz-serp">#cloud-security</button>
+              <button class="hashtag"
+                data-link="https://www.google.com/search?q=data+protection&sca_esv=fe467be3178b7f86&sca_upv=1&sxsrf=ACQVn0_e_y9vXeMBjtV3ngDOZk4MN9-nzA%3A1712635830076&ei=tr8UZr-pBJDg0PEPjPuk0Ao&ved=0ahUKEwi_3J_SobSFAxUQMDQIHYw9CaoQ4dUDCBE&uact=5&oq=data+protection&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2RhdGEgcHJvdGVjdGlvbjILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjILEAAYgAQYigUYkQIyERAAGIAEGIoFGJECGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQABiABBixAxiDATIIEAAYgAQYsQNIkilQAFjoG3AAeAGQAQCYAcYBoAHTCqoBBDEzLjK4AQPIAQD4AQGYAg-gAvwKwgIEECMYJ8ICChAjGIAEGIoFGCfCAgoQABiABBiKBRhDwgIREC4YgAQYsQMYgwEYxwEY0QPCAgsQLhiABBjHARjRA8ICEBAAGIAEGIoFGEMYsQMYgwHCAgoQABiABBgUGIcCwgIOEAAYgAQYigUYsQMYgwHCAg0QLhiABBjHARjRAxgKwgIOEAAYgAQYigUYkQIYsQOYAwCSBwYxMy4xLjGgB7Zm&sclient=gws-wiz-serp">#data-protection</button>
+              <button class="hashtag"
+                data-link="https://www.google.com/search?q=linux&oq=linux&gs_lcrp=EgZjaHJvbWUqDwgAEEUYOxiDARixAxiABDIPCAAQRRg7GIMBGLEDGIAEMgYIARBFGEAyDQgCEAAYgwEYsQMYgAQyEwgDEC4YgwEYxwEYsQMY0QMYgAQyDQgEEAAYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyMTk4ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8">#linux</button>
+              <button class="hashtag"
+                data-link="https://www.google.com/search?q=microsoft+azure&oq=microsoft+azure&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDISCAEQABgUGIMBGIcCGLEDGIAEMhIIAhAAGBQYgwEYhwIYsQMYgAQyBwgDEAAYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyCggGEAAYsQMYgAQyBggHEEUYQdIBCDM5ODNqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8">#azure</button>
+              <button class="hashtag"
+                data-link="https://www.google.com/search?q=pen+testing&sca_esv=fe467be3178b7f86&sca_upv=1&sxsrf=ACQVn09mt_DPeC9sb3upH5MzkX9zgo8Yyg%3A1712635890622&ei=8r8UZrHMJd6q0PEP1Iy_iA8&ved=0ahUKEwixjY_vobSFAxVeFTQIHVTGD_EQ4dUDCBA&uact=5&oq=pen+testing&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3BlbiB0ZXN0aW5nMg4QABiABBiKBRiRAhixAzIFEAAYgAQyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIKEAAYgAQYFBiHAjIKEAAYgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIlRpQoAVYwhdwAXgBkAEAmAHTAaABxgiqAQU4LjIuMbgBA8gBAPgBAZgCDKAC6QioAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICGRAuGIAEGIoFGEMYxwEY0QMY6gIYtALYAQHCAgoQIxiABBiKBRgnwgIKEAAYgAQYigUYQ8ICEBAAGIAEGIoFGEMYsQMYgwHCAg4QLhiDARixAxiABBiKBcICCxAuGIAEGMcBGNEDwgIOEAAYgAQYigUYsQMYgwHCAgsQABiABBixAxiDAcICBBAjGCfCAhAQLhiABBiKBRhDGMcBGNEDwgIQEC4YgAQYigUYQxjHARivAcICDhAuGIAEGLEDGMcBGNEDwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhiABBixAxiDARjUAsICCxAuGIAEGLEDGIMBwgIIEC4YgAQYsQPCAggQABiABBixA8ICDRAAGIAEGIoFGEMYsQPCAhAQLhiABBgUGIcCGMcBGK8BmAMGugYGCAEQARgBkgcFOS4yLjGgB9Za&sclient=gws-wiz-serp">#pen-testing</button>
+              <button class="hashtag"
+                data-link="https://www.google.com/search?q=compTIA&sca_esv=fe467be3178b7f86&sca_upv=1&sxsrf=ACQVn0-P1MRNmSyrrQUyPvtuk6H9G8f4rQ%3A1712635927905&ei=F8AUZpj7NriT0PEPgoKyoAU&ved=0ahUKEwjY4vKAorSFAxW4CTQIHQKBDFQQ4dUDCBE&uact=5&oq=compTIA&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2NvbXBUSUEyDRAAGIAEGIoFGEMYsQMyERAuGIAEGLEDGIMBGMcBGNEDMg0QABiABBgUGIcCGLEDMhAQABiABBiKBRhDGLEDGIMBMgoQABiABBiKBRhDMgoQABiABBiKBRhDMg0QABiABBiKBRhDGLEDMggQABiABBixAzIFEAAYgAQyChAAGIAEGIoFGENI3RlQrQRYrxJwAXgBkAEAmAFRoAGyA6oBATa4AQPIAQD4AQGYAgegAsgDwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAhYQLhiABBiKBRhDGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgoQABiABBgUGIcCwgIKEC4YgAQYFBiHAsICJRAuGIAEGIoFGEMYsQMYgwEYxwEY0QMYlwUY3AQY3gQY4ATYAQGYAwCIBgGQBgq6BgYIARABGBSSBwE3oAe6Lw&sclient=gws-wiz-serp">#compTIA</button>
+
+            </div>
+
+          </div>
+
+          <div class="contact">
+
+            <h2 class="h2">Let's Talk</h2>
+
+            <div class="wrapper">
+
+              <p>
+                If you're looking to connect with like-minded professionals, these platforms are great places to meet:
+              </p>
+
+              <ul class="social-link">
+
+                <li>
+                  <a href="https://discord.com" target="_blank" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://twitter.com/home" target="_blank" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://github.com/" target="_blank" class="icon-box github">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+
+        <p class="footer-text">
+          Learn about all things cyber-security!
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="https://www.linkedin.com/in/corey-carpenter-a92916210/" target="_blank" class="footer-link">Hire Me
+              (please!!)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Me</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="footer-link">Contact Me</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2024 <a href="#">Corey's Cyber-Security Blog</a>
+    </p>
+
+  </footer>
+
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
